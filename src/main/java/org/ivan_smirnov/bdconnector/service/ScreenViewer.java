@@ -35,14 +35,13 @@ public class ScreenViewer {
     private static void printLine(List<Integer> columnSizes) {
         StringBuilder sb = new StringBuilder("+");
         for (Integer size : columnSizes) {
-            sb.append("-".repeat(Math.max(0, size + 2)));
+            sb.append("-".repeat(size + 2));
             sb.append("+");
         }
         System.out.println(sb);
     }
 
     private static void printColumn(String text, int length) {
-        System.out.print("| " + text +
-                " ".repeat(Math.max(0, length - text.length() + 1)));
+        System.out.print("| " + text + " ".repeat(length - text.length() + 1));
     }
 }

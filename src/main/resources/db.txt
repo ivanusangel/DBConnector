@@ -1,0 +1,13 @@
+create table Persons (
+     PersonID int,
+     Name varchar(255),
+     City varchar(255)
+);
+
+insert into Persons VALUES (1, 'Ivan Smirnov', 'Dnipro');
+insert into Persons VALUES (2, 'John Connor', 'Los Angeles');
+insert into Persons VALUES (3, 'Stich', 'Hawaii');
+
+delete from Persons where name = 'Ivan';
+
+select * from Persons;
